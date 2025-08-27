@@ -22,7 +22,7 @@ function calling(title,number) {
   const callingtCost = 20;
 
   if (coin < callingtCost) {
-    alert("Your Coin is Low. minimum 20 coins for call");
+    alert("❌ Your Coin is Low. minimum 20 coins for call");
     return;
   }
   alert("📞 Calling " + title+ " "+ number + "....");
@@ -121,4 +121,56 @@ document.getElementById('clearButton').addEventListener('click', function() {
     historyDivChild[i].remove();
   }
 });
+
+
+// copy function
+function copyCount(copyTextId){
+ let coppyCount =Number(getInnerText('coppyCount'))
+  coppyCount++
+  document.getElementById('coppyCount').innerText = coppyCount;
+  const copyText =getInnerText(copyTextId)
+   navigator.clipboard.writeText(copyText);
+   alert('✔Number copyed: ' + copyText)
+   return;
+}
+
+
+
+
+document.getElementById("nationalCopy").addEventListener('click',function(){
+ copyCount('nationalEmergencyNumber') 
+})
+document.getElementById("policeCopy").addEventListener('click',function(){
+ copyCount('policeNumber') 
+})
+document.getElementById("fireCopy").addEventListener('click',function(){
+ copyCount('fireServiceNumber') 
+})
+document.getElementById("ambulanceCopy").addEventListener('click',function(){
+ copyCount('ambulanceNumber') 
+})
+document.getElementById("WomenCopy").addEventListener('click',function(){
+ copyCount('womenChildNumber') 
+})
+document.getElementById("corruptionCopy").addEventListener('click',function(){
+ copyCount('antiCorruptionNumber') 
+})
+document.getElementById("electricityCopy").addEventListener('click',function(){
+ copyCount('electricityNumber') 
+})
+document.getElementById("bracCopy").addEventListener('click',function(){
+ copyCount('bracNumber') 
+})
+document.getElementById("railwayCopy").addEventListener('click',function(){
+ copyCount('railwayNumber') 
+})
+// const copyButtons = document.getElementsByClassName('copyButton')
+// let coppyCount =Number(getInnerText('coppyCount'))
+//  for(const copyButton of copyButtons){
+//   copyButton.addEventListener('click',function(){
+//     coppyCount++
+//     document.getElementById('coppyCount').innerText = coppyCount;
+//   })
+
+//  }
 
