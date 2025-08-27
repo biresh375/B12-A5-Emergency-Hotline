@@ -38,22 +38,22 @@
       <!-- navbar right site -->
       <div class="flex justify-center items-center sm:gap-5">
         <div
-          class="flex justify-center items-center gap-4 px-8 py-4 rounded-[50px] bg-[#41ff6b19]"
+          class="sm:flex justify-center items-center gap-4 px-4 sm:px-8 py-4 rounded-[50px] bg-[#41ff6b19] text-center"
         >
-          <p id="heart-count" class="font-bold text-2xl">0</p>
+          <p id="heart-count" class="font-bold sm:text-2xl">0</p>
           <img class="w-[35px] h-[35]" src="assets/heart.png" alt="" />
         </div>
         <div
-          class="flex justify-center items-center gap-4 px-8 py-4 rounded-[50px] bg-[#41ff6b19]"
+          class=" sm:flex justify-center items-center gap-4 px-4 sm:px-8 py-4 rounded-[50px] bg-[#41ff6b19] text-center mx-2 sm:mx-0"
         >
-          <p id="coin" class="font-bold text-2xl">100</p>
+          <p id="coin" class="font-bold sm:text-2xl">100</p>
           <img class="w-[35px] h-[35px]" src="assets/coin.png" alt="" />
         </div>
         <div
-          class="hidden sm:flex justify-center items-center gap-3 px-8 py-4 rounded-[50px] bg-[#00a63e]"
+          class=" sm:flex justify-center items-center gap-3 px-4 sm:px-8 py-4 rounded-[50px] text-center bg-[#00a63e]"
         >
-          <p class="font-semibold text-2xl text-white">0</p>
-          <p class="font-semibold text-2xl text-white">Copy</p>
+          <p class="font-semibold  sm:text-2xl text-white">0</p>
+          <p class="font-semibold  sm:text-2xl text-white">Copy</p>
         </div>
       </div>
     </nav>
@@ -89,9 +89,9 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">National Emergency Number</h1>
+            <h1 id="nationalEmergencyTitle" class="font-bold text-xl">National Emergency Number</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-            <p class="number font-[700] text-[2rem]">999</p>
+            <p id="nationalEmergencyNumber" class="number font-[700] text-[2rem]">999</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">All</p>
             <!-- button div -->
             <div
@@ -118,9 +118,9 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">Police Helpline Number</h1>
+            <h1 id="policeTitle" class="font-bold text-xl">Police Helpline Number</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">Police</p>
-            <p class="number font-[700] text-[2rem]">999</p>
+            <p id="policeNumber" class="number font-[700] text-[2rem]">999</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">Police</p>
             <!-- button div -->
             <div
@@ -147,9 +147,9 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">Fire Service Number</h1>
+            <h1 id="fireSErviceTitle" class="font-bold text-xl">Fire Service Number</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">Fire Service</p>
-            <p class="number font-[700] text-[2rem]">999</p>
+            <p id="fireServiceNumber" class="number font-[700] text-[2rem]">999</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">Fire</p>
             <!-- button div -->
             <div
@@ -175,9 +175,9 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">Ambulance Service</h1>
+            <h1 id="ambulanceTitle" class="font-bold text-xl">Ambulance Service</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">Ambulance</p>
-            <p class="number font-[700] text-[2rem]">1994-999999</p>
+            <p id="ambulanceNumber" class="number font-[700] text-[2rem]">1994-999999</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">Health</p>
             <!-- button div -->
             <div
@@ -203,11 +203,11 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">Women & Child Helpline</h1>
+            <h1 id="womenChildTitle" class="font-bold text-xl">Women & Child Helpline</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">
               Women & Child Helpline
             </p>
-            <p class="number font-[700] text-[2rem]">109</p>
+            <p id="womenChildNumber" class="number font-[700] text-[2rem]">109</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">Help</p>
             <!-- button div -->
             <div
@@ -233,9 +233,9 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">Anti-Corruption Helpline</h1>
+            <h1 id="antiCorruptionTitle" class="font-bold text-xl">Anti-Corruption Helpline</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">Anti-Corruption</p>
-            <p class="number font-[700] text-[2rem]">106</p>
+            <p id="antiCorruptionNumber" class="number font-[700] text-[2rem]">106</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">Govt</p>
             <!-- button div -->
             <div
@@ -261,9 +261,9 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">Electricity Helpline</h1>
+            <h1 id="electricityTitle" class="font-bold text-xl">Electricity Helpline</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">Electricity Outage</p>
-            <p class="number font-[700] text-[2rem]">16216</p>
+            <p id="electricityNumber" class="number font-[700] text-[2rem]">16216</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">Electricity</p>
             <!-- button div -->
             <div
@@ -289,9 +289,9 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">Brac Helpline</h1>
+            <h1 id="bracTitle" class="font-bold text-xl">Brac Helpline</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">Brac</p>
-            <p class="number font-[700] text-[2rem]">16445</p>
+            <p id="bracNumber" class="number font-[700] text-[2rem]">16445</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">NGO</p>
             <!-- button div -->
             <div
@@ -317,9 +317,9 @@
               </div>
               <i class="fa-regular fa-heart heartIcon"></i>
             </div>
-            <h1 class="font-bold text-xl">Bangladesh Railway Helpline</h1>
+            <h1 id="railwayTitle" class="font-bold text-xl">Bangladesh Railway Helpline</h1>
             <p class="text-[18px] text-[#5C5C5C] mb-6">Bangladesh Railway</p>
-            <p class="number font-[700] text-[2rem]">163</p>
+            <p id="railwayNumber" class="number font-[700] text-[2rem]">163</p>
             <p class="bg-[#F2F2F2] px-4 py-1 inline rounded-4xl">Travel</p>
             <!-- button div -->
             <div
@@ -348,14 +348,17 @@
               <i class="fa-regular fa-clock"></i>
               <h1 class="text-xl ml-2">Call History</h1>
             </div>
-            <button "
+            <button id="clearButton"
               class="px-7 py-2 rounded-[50px] bg-[#00a63e] text-white font-semibold text-2xl cursor-pointer"
             >
               Clear
             </button>
           </div>
           <!-- all history -->
-          <div></div>
+          <div id="allHistorySection" class="">
+            
+
+          </div>
         </div>
       </div>
     </section>
